@@ -1,0 +1,53 @@
+/* 전체 배경과 폰트 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f9f7f1;
+  color: #333;
+}
+
+/* 가운데 정렬 컨테이너 */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #5a4631;
+}
+
+/* 카드 이름 */
+.card-title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #a0522d;
+}
+
+/* 운세 섹션 전체 스타일 */
+.fortune-section {
+  margin-bottom: 16px;
+}
+
+/* 소제목 */
+.fortune-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #757575;
+}
+
+/* 운세 텍스트 */
+.fortune-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-left: 8px;
+}

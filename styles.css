@@ -3,71 +3,70 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  background-color: #f9f7f1;
-  color: #333;
+  background: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0e6d2;
 }
 
 .container {
   max-width: 90%;
   max-width: 500px;
   margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  background: rgba(20, 20, 20, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 h1 {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 24px;
-  color: #5a4631;
+  color: #ffd700;
+  text-shadow: 0 0 8px #6b46c1;
 }
 
 button {
   display: block;
   margin: 0 auto 30px;
-  padding: 12px 20px;
-  font-size: 1rem;
-  background-color: #a67c52;
-  color: white;
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  background-color: #6b46c1;
+  color: #fff;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
+  box-shadow: 0 0 10px #b794f4;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #946b45;
+  background-color: #553c9a;
 }
 
 .card-title {
   text-align: center;
   font-size: 1.4rem;
   margin-bottom: 20px;
-  color: #a0522d;
+  color: #faf089;
+  text-shadow: 0 0 4px #b7791f;
 }
 
 .fortune-section {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .fortune-section h2 {
   font-size: 1.1rem;
   margin-bottom: 6px;
-  color: #757575;
+  color: #ecc94b;
 }
 
 .fortune-section p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
   padding-left: 8px;
-}
-
-.today-date {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 0.95rem;
-  color: #666;
+  color: #e2e8f0;
 }
 
 .card-img {
@@ -76,5 +75,11 @@ button:hover {
   margin: 0 auto 20px;
   display: block;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }

@@ -17,14 +17,13 @@ function displayTodayFortune() {
   document.getElementById("advice-text").innerText = card.advice;
 
   document.getElementById("card-result").style.display = "block";
+  document.getElementById("show-btn").style.display = "none";  // 버튼 숨기기
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 오늘 날짜 표시
   const now = new Date();
   document.getElementById("today-date").innerText =
     `📅 오늘 날짜: ${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 
-  // 버튼 이벤트
   document.getElementById("show-btn").addEventListener("click", displayTodayFortune);
 });

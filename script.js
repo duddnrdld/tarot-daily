@@ -39,7 +39,11 @@ function displayTodayFortune() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const now = new Date();
-  document.getElementById("today-date").innerText =
-    `📅 오늘 날짜: ${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  const yyyy = now.getFullYear();
+  const mm = String(now.getMonth() + 1).padStart(2, '0');
+  const dd = String(now.getDate()).padStart(2, '0');
+  const title = document.getElementById("title-heading");
+  title.innerText = `🔮 ${yyyy}년 ${mm}월 ${dd}일 오늘의 타로 운세`;
+
   document.getElementById("show-btn").addEventListener("click", displayTodayFortune);
 });

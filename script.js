@@ -1,3 +1,4 @@
+
 function getTodayCardIndex() {
   const today = new Date();
   const dateStr = today.toISOString().slice(0, 10);
@@ -16,8 +17,22 @@ function displayTodayFortune() {
   document.getElementById("study-text").innerText = card.study;
   document.getElementById("advice-text").innerText = card.advice;
 
-  document.getElementById("card-result").style.display = "block";
-  document.getElementById("show-btn").style.display = "none";  // 버튼 숨기기
+  // Fade out the button
+  const btn = document.getElementById("show-btn");
+  btn.style.transition = "opacity 0.6s ease";
+  btn.style.opacity = 0;
+  setTimeout(() => {
+    btn.style.display = "none";
+  }, 600);
+
+  // Show results with fade-in
+  const result = document.getElementById("card-result");
+  result.style.display = "block";
+  result.style.opacity = 0;
+  result.style.transition = "opacity 1s ease";
+  setTimeout(() => {
+    result.style.opacity = 1;
+  }, 100);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -6,6 +6,7 @@ function getRandomCardIndex() {
 function displayCardByIndex(idx) {
   const card = cards[idx];
 
+  // 텍스트와 이미지 모두 갱신
   document.getElementById("card-name").innerText = card.name;
   document.getElementById("finance-text").innerText = card.finance;
   document.getElementById("love-text").innerText = card.love;
@@ -19,10 +20,10 @@ function displayCardByIndex(idx) {
   const result = document.getElementById("card-result");
   result.style.display = "block";
   result.style.opacity = 0;
-  result.style.transition = "opacity 1s ease";
+  result.style.transition = "opacity 0.6s ease";
   setTimeout(() => {
     result.style.opacity = 1;
-  }, 100);
+  }, 50);
 }
 
 function displayTodayFortune() {
